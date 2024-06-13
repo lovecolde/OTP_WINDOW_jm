@@ -8,7 +8,7 @@
       d:DesignHeight="600" d:DesignWidth="825"
       Title="Verification">
 
-    <Grid>
+    <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -17,8 +17,10 @@
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
 
-            <Button Name="OpenCmdButton" Content="Open CMD" Width="100" Margin="10" Click="OpenCmdButton_Click" />
-            <Button Name="LoadJsonButton" Content="Load JSON" Width="100" Margin="10" Click="LoadJsonButton_Click" />
+            <Button Name="OpenCmdButton" Content="Open CMD" Width="120" Margin="10" Click="OpenCmdButton_Click" 
+                    Style="{DynamicResource OTPButton2Style}"/>
+            <Button Name="LoadJsonButton" Content="Load JSON" Width="120" Margin="10" Click="LoadJsonButton_Click" 
+                    Style="{DynamicResource OTPButton2Style}"/>
 
             <TextBox Name="CmdPathTextBox" Text="Cmd Path" IsReadOnly="True" 
                      HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" />
@@ -30,7 +32,6 @@
         </ScrollViewer>
 
         <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10">
-
         </ScrollViewer>
     </Grid>
 </Page>

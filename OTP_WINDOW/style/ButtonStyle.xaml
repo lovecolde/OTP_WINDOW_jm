@@ -13,8 +13,8 @@
 
     <SolidColorBrush x:Key="ButtonPressedColor" Color="#7A7CFF"/>
 
-    <!--버튼 스타일-->
-    <Style x:Key="OTPButtonStyle" TargetType="Button">
+    <!--버튼1 스타일-->
+    <Style x:Key="OTPButton1Style" TargetType="Button">
         <Setter Property="Background" Value="White"/>
         <Setter Property="Foreground" Value="{DynamicResource PrimaryTextColor}"/>
         <Setter Property="FontWeight" Value="Bold"/>
@@ -27,7 +27,6 @@
                 <ControlTemplate TargetType="Button">
                     <Border x:Name="btnBorder" CornerRadius="20"
                             Background="{TemplateBinding Background}"
-                            BorderBrush="{TemplateBinding BorderBrush}"
                             SnapsToDevicePixels="True"
                             Padding="{TemplateBinding Padding}">
                         <ContentPresenter x:Name="ContentPresenter" Focusable="False"
@@ -52,4 +51,46 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    
+    <!--버튼2 스타일-->
+    <Style x:Key="OTPButton2Style" TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource MainBlueBrush}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Padding" Value="10, 5, 10, 5"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="btnBorder" CornerRadius="20"
+                            Background="{TemplateBinding Background}"
+                            SnapsToDevicePixels="True"
+                            Padding="{TemplateBinding Padding}">
+                        <ContentPresenter x:Name="ContentPresenter" Focusable="False"
+                                          HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalAlignment}"
+                                          Margin="{TemplateBinding Padding}"
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                          RecognizesAccessKey="True"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="btnBorder" Property="Background"
+                                    Value="#A9D0F5"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="btnBorder" Property="Background"
+                                    Value="white"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
 </ResourceDictionary>

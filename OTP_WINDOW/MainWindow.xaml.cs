@@ -60,5 +60,10 @@ namespace OTP_WINDOW
             // Chapter 4 버튼 클릭 시 동작 정의
             //MainFrame.Navigate(new Chap4());
         }
+
+        private void Chapter5Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Verification());
+        }
     }
 }

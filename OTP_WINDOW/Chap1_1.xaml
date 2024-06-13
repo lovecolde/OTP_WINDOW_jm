@@ -43,8 +43,8 @@
         <!-- 이전/다음 버튼 -->
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom"
                     Background="White">
-            <Button Style="{DynamicResource OTPButtonStyle}" Content="이전" Click="PreviousButton_Click"/>
-            <Button Style="{DynamicResource OTPButtonStyle}" Content="다음" Click="NextButton_Click"/>
+            <Button Style="{DynamicResource OTPButton2Style}" Content="이전" Click="PreviousButton_Click"/>
+            <Button Style="{DynamicResource OTPButton2Style}" Content="다음" Click="NextButton_Click"/>
         </StackPanel>
     </Grid>
 </Page>

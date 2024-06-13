@@ -26,25 +26,28 @@
             </Button>
 
 
-            <Button x:Name="btnStart" Click="StartButton_Click" Style="{DynamicResource OTPButtonStyle}" Width="150">
+            <Button x:Name="btnStart" Click="StartButton_Click" Style="{DynamicResource OTPButton1Style}" Width="150">
                 <TextBlock FontSize="20" FontWeight="Bold" Text="START"/>
             </Button>
 
-            <Button x:Name="btnCh1" Click="Chapter1Button_Click" Style="{DynamicResource OTPButtonStyle}" Width="150">
+            <Button x:Name="btnCh1" Click="Chapter1Button_Click" Style="{DynamicResource OTPButton1Style}" Width="150">
                 <TextBlock FontSize="20" FontWeight="Bold" Text="CHAP 1"/>
             </Button>
 
-            <Button x:Name="btnCh2" Click="Chapter2Button_Click" Style="{DynamicResource OTPButtonStyle}" Width="150">
+            <Button x:Name="btnCh2" Click="Chapter2Button_Click" Style="{DynamicResource OTPButton1Style}" Width="150">
                 <TextBlock FontSize="20" FontWeight="Bold" Text="CHAP 2"/>
             </Button>
 
-            <Button x:Name="btnCh3" Click="Chapter3Button_Click" Style="{DynamicResource OTPButtonStyle}" Width="150">
+            <Button x:Name="btnCh3" Click="Chapter3Button_Click" Style="{DynamicResource OTPButton1Style}" Width="150">
                 <TextBlock FontSize="20" FontWeight="Bold" Text="CHAP 3"/>
             </Button>
 
-            <Button x:Name="btnCh4" Click="Chapter4Button_Click" Style="{DynamicResource OTPButtonStyle}" Width="150">
-
+            <Button x:Name="btnCh4" Click="Chapter4Button_Click" Style="{DynamicResource OTPButton1Style}" Width="150">
                 <TextBlock FontSize="20" FontWeight="Bold" Text="CHAP 4"/>
+            </Button>
+
+            <Button x:Name="btnCh5" Click="Chapter5Button_Click" Style="{DynamicResource OTPButton1Style}" Width="150">
+                <TextBlock FontSize="20" FontWeight="Bold" Text="CHAP 5"/>
             </Button>
         </StackPanel>
 

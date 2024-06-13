@@ -13,7 +13,7 @@
             <TextBlock x:Name="QuizQuestion" Text="Q 1. 오픈소스 사용 시 주의가 필요한 고려사항 3가지는?" 
                        Style="{StaticResource MainTitleBlockStyle}" HorizontalAlignment="Center"/>
             <TextBox x:Name="AnswerTextBox" Width="300" Height="30" Margin="0,0,0,20"/>
-            <Button x:Name="SubmitButton" Style="{DynamicResource OTPButtonStyle}" Content="제출" Click="SubmitButton_Click" Width="100" Height="50"/>
+            <Button x:Name="SubmitButton" Style="{DynamicResource OTPButton2Style}" Content="제출" Click="SubmitButton_Click" Width="100" Height="50"/>
             <TextBlock x:Name="FeedbackTextBlock" Text="" FontSize="16" Foreground="Red" Margin="20,0,0,0"/>
         </StackPanel>
     </Grid>
