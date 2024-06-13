@@ -9,6 +9,16 @@
       Title="Chap4">
 
     <Grid Background="White">
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="ChatTextBox" Grid.Row="0" Margin="5" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" IsReadOnly="True" AcceptsReturn="True"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <TextBox x:Name="MessageTextBox" Width="600" Margin="5"/>
+            <Button Content="전송" Style="{DynamicResource OTPButton2Style}" Click="SendButton_Click" Width="100" Margin="5"/>
+        </StackPanel>
     </Grid>
 </Page>
