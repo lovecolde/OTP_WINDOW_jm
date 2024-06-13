@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace OTP_WINDOW
 {
-    /// <summary>
-    /// MainWindow.xaml에 대한 상호 작용 논리
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -58,7 +55,7 @@ namespace OTP_WINDOW
         private void Chapter4Button_Click(object sender, RoutedEventArgs e)
         {
             // Chapter 4 버튼 클릭 시 동작 정의
-            //MainFrame.Navigate(new Chap4());
+            MainFrame.Navigate(new Chap4());
         }
 
         private void Chapter5Button_Click(object sender, RoutedEventArgs e)
