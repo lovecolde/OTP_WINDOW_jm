@@ -1,0 +1,26 @@
+﻿<Page x:Class="OTP_WINDOW.StartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OTP_WINDOW"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="825"
+      Title="StartPage">
+
+    <Grid Background="White" Margin="0,0,0,0">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20" Height="500" Width="725">
+            <TextBlock Text="Open Source Teaching Program&#10;(OTP)에 오신 것을 환영합니다!"
+                       Style="{StaticResource MainTitleBlockStyle}"/>
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                       Text="OTP는 오픈 소스 라이선스에 대해 가르치는 교육 플랫폼입니다. &#10;OTP를 통해 다양한 오픈 소스 라이선스, 그 특징 및&#10;소프트웨어 개발에서의 활용 방법에 대해 배울 수 있습니다.&#10;OTP는 누구에게나 오픈 소스 라이선스의 세계를 탐험하는 데 유용한 통찰력을 제공합니다."/>
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                       Text="오늘 OTP와 함께 오픈 소스 라이선스의 세계를 탐험해보세요!"/>
+            <Image Source="/Images/Teacher.png" Width="150" Height="150" VerticalAlignment="Top"/>
+        
+            <TextBlock Style="{StaticResource BodyTextBlockStyle}" 
+                           Foreground="Gray" HorizontalAlignment="Center"
+                           Text="CHAP 1 버튼을 눌러 학습을 시작하세요"/>
+        </StackPanel>
+    </Grid>
+</Page>

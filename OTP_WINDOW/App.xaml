@@ -1,0 +1,16 @@
+﻿<Application x:Class="OTP_WINDOW.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:OTP_WINDOW"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/style/txtStyle.xaml"/>
+                <ResourceDictionary Source="/style/ButtonStyle.xaml"/>
+                <ResourceDictionary Source="/style/ImageStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>

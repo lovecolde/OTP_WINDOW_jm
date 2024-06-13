@@ -1,0 +1,50 @@
+﻿<Page x:Class="OTP_WINDOW.Chap1_1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OTP_WINDOW"
+      mc:Ignorable="d" 
+       d:DesignHeight="600" d:DesignWidth="825"
+      Title="Chap1_1">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+
+            <StackPanel Margin="20">
+
+                <TextBlock Style="{StaticResource MainTitleBlockStyle}"
+                           Text="1) Free SW/ Open source SW?"/>
+
+
+                <TextBlock Style="{StaticResource SubtitleBlockStyle}"
+                       Text="FreeSW?"/>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                       Text="- 자유 소프트웨어는 실행, 복사, 배포, 연구, 수정의 자유가 있으며 사용자의 자유를 보장해야함  &#10;   _ 소프트웨어의 자유 강조"/>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                       Text="- 오픈소스 소프트웨어와의 차이는 “소스코드의 공개와 자유로운 수정, 재배포를 강조하나, &#10;   ** 라이선스에 따라 사용자에게 일부 제한을 부과함** &#10;   _ 소프트웨어의 소스 코드 공개, 개발 방법 강조"/>
+
+                <Image Source="/Images/FreeSW.png" Style="{StaticResource ImageStyle}"/>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" 
+                           Foreground="Gray" HorizontalAlignment="Center"
+                           Text="다음 버튼을 눌러 다음 차례로 이동하세요"/>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- 이전/다음 버튼 -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                    Background="White">
+            <Button Style="{DynamicResource OTPButtonStyle}" Content="이전" Click="PreviousButton_Click"/>
+            <Button Style="{DynamicResource OTPButtonStyle}" Content="다음" Click="NextButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

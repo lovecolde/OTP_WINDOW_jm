@@ -1,0 +1,55 @@
+﻿<Window x:Class="OTP_WINDOW.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OTP_WINDOW"
+        mc:Ignorable="d"
+         Title="OTP" Height="600" Width="1000"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- 전체 레이아웃을 두 개의 열로 분할합니다 -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="175"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- 좌측 사이드 메뉴 -->
+        <StackPanel Background="#D8D8D8" Grid.Column="0">
+
+            <Button x:Name="OTP_LOGO" Click="OTP_LOGO_Click" Margin="10" BorderThickness="0" BorderBrush="Transparent" Background="Transparent">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Image Source="/Images/OTP_LOGO.png"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+
+            <Button x:Name="btnStart" Click="StartButton_Click" Style="{DynamicResource OTPButtonStyle}" Width="150">
+                <TextBlock FontSize="20" FontWeight="Bold" Text="START"/>
+            </Button>
+
+            <Button x:Name="btnCh1" Click="Chapter1Button_Click" Style="{DynamicResource OTPButtonStyle}" Width="150">
+                <TextBlock FontSize="20" FontWeight="Bold" Text="CHAP 1"/>
+            </Button>
+
+            <Button x:Name="btnCh2" Click="Chapter2Button_Click" Style="{DynamicResource OTPButtonStyle}" Width="150">
+                <TextBlock FontSize="20" FontWeight="Bold" Text="CHAP 2"/>
+            </Button>
+
+            <Button x:Name="btnCh3" Click="Chapter3Button_Click" Style="{DynamicResource OTPButtonStyle}" Width="150">
+                <TextBlock FontSize="20" FontWeight="Bold" Text="CHAP 3"/>
+            </Button>
+
+            <Button x:Name="btnCh4" Click="Chapter4Button_Click" Style="{DynamicResource OTPButtonStyle}" Width="150">
+
+                <TextBlock FontSize="20" FontWeight="Bold" Text="CHAP 4"/>
+            </Button>
+        </StackPanel>
+
+        <!-- 우측 메인 컨텐츠 영역 -->
+        <Frame x:Name="MainFrame" Grid.Column="1" Background="White" Margin="0,0,0,0"/>
+
+    </Grid>
+</Window>

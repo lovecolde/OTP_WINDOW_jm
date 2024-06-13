@@ -1,0 +1,246 @@
+﻿<Page x:Class="OTP_WINDOW.Chap1_3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OTP_WINDOW"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="825"
+      Title="Chap1_3">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+
+
+        <!-- 첫 번째 열에 포함된 요소 -->
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+
+            <StackPanel Margin="20">
+
+                <TextBlock Style="{StaticResource MainTitleBlockStyle}"
+                           Text="3) 오픈소스 SW 공급망 구성요소 및 추세 / 피해사례"/>
+
+
+                <TextBlock Style="{StaticResource SubtitleBlockStyle}"
+                           Text="1. SW 공급망 구성요소"/>
+                <Image Source="/Images/오픈소스공급망구성요소추세.png" Style="{StaticResource ImageStyle}" />
+
+
+
+                <TextBlock Style="{StaticResource SubtitleBlockStyle}"
+                       Text="2. 하나의 취약점과 공격으로 퍼질 수 있는 SW 공급망 피해"/>
+
+
+
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}">
+                    <Hyperlink NavigateUri="https://www.solarwinds.com/">
+                    <Run Text="[SolarWinds]" Foreground="Black"/>
+                    </Hyperlink>
+                </TextBlock>
+                <Image Source="/Images/Solar.bmp" Width="300" Margin="0,10,0,10" HorizontalAlignment="Left"/>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                       Text="2020년 러시아 사이버 범죄그룹 “Nobelium” 공격&#10;18,000여개 조직에 악성 코드 감염"/>
+
+
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}">
+                    <Hyperlink NavigateUri="https://logging.apache.org/log4j/2.x/">
+                        <Run Text="[LOG4J]" Foreground="Black"/>
+                     </Hyperlink>
+                </TextBlock>
+
+                <Image Source="/Images/LOG4J.bmp" Width="300" Margin="0,10,0,10" HorizontalAlignment="Left"/>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                       Text="2021년 보안 취약점 발견으로 모든 서버에 영향을 미칠 수 있는 취약점으로 분류"/>
+
+
+
+
+                <TextBlock Style="{StaticResource SubtitleBlockStyle}">
+                    <Run Text="3. SW 공급망 보안을 위한 방법 &#10;    -> 모든 구성 SW의 '무결성'목적의 "/>
+                    <Hyperlink NavigateUri="https://www.ibm.com/kr-ko/topics/zero-trust">
+                        <Run Text="제로트러스트"/>
+                    </Hyperlink>
+                </TextBlock>
+                <Image Source="/Images/제로트러스트.png" Style="{StaticResource ImageStyle}"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="제로트러스트 보안 아키텍처는 신뢰는 취약점으로 인식, &#10;모든 구성요소는 독립적으로 신뢰성을 확보해야 한다."/>
+
+
+
+                <!-- 이미지를 2x3 행렬로 배치 -->
+                <Grid Margin="0,20,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- 첫 번째 행 -->
+                    <Image Source="/Images/보안되지않은코드.png" 
+                           Grid.Row="0" Grid.Column="0" 
+                           Width="200" Height="200" Margin="10"/>
+                    <Image Source="/Images/보안되지않은타사구성요소.png" 
+                           Grid.Row="0" Grid.Column="1" 
+                           Width="200" Height="200" Margin="10"/>
+                    <Image Source="/Images/보안되지않은배포채널.png" 
+                           Grid.Row="0" Grid.Column="2" 
+                           Width="200" Height="200" Margin="10"/>
+
+                    <!-- 두 번째 행 -->
+                    <Image Source="/Images/보안되지않은공급량.png" 
+                           Grid.Row="1" Grid.Column="0" 
+                           Width="200" Height="200" Margin="10"/>
+                    <Image Source="/Images/안전하지않은도구체인.png" 
+                           Grid.Row="1" Grid.Column="1" 
+                           Width="200" Height="200" Margin="10"/>
+                    <Image Source="/Images/안전하지않은파이프라인.png" 
+                           Grid.Row="1" Grid.Column="2" 
+                           Width="200" Height="200" Margin="10"/>
+                </Grid>
+                
+                
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="SW Supply Chain Security는 SW 개발부터 배포까지 모든 프로세스의 보안과 무결성 보장 조치 의미"/>
+
+
+                <TextBlock Style="{StaticResource SubtitleBlockStyle}"
+                           Text="4. 컴퓨터프로그램 저작물로써 오픈소스 보호"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="- 오픈소스는 컴퓨터프로그램 저작물로써 저작권에 의해 보호됨"/>
+
+
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}"
+                           Text="[컴퓨터프로그램 저작물]"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="- 사람의 사상 등이 ‘창작성’을 보유하여 저작권을 갖는 창작물의 한 유형"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="- 컴퓨터 등 정보처리 장치 안에서 지시, 명령으로 이루어져 직접 또는 간접으로 사용되어 &#10;  특정한 결과를 발생시켜 창작성을 갖는 것"/>
+
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}"
+                           Text="[기술적, 산업적 변화에 따른 컴퓨터프로그램 저작물 동향]"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Run Text="1) 시청각 자료의 지시명령화 : " Foreground="{StaticResource MainBlueBrush}"/>
+                    <Run Text="&#10;이미지, 음성 등의 데이터가 기술적 변화와 압축 기술의 발전에 따라 지시명령의 형태로 저장되어 &#10;컴퓨터프로그램 저작물과 시청각 자료의 구별 어려움"/>
+                </TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Run Text="2) 컴퓨터프로그램의 멀티미디어화 : " Foreground="{StaticResource MainBlueBrush}"/>
+                    <Run Text="&#10;텍스트 기반의 컴퓨터프로그램 저작물이 GUI 기술 등의 발전으로 종합 저작물로서 성격을 가짐&#10;(ex.게임) 이것은 각기 다른 저작물로 보호되어 소송 시 원고에 불리"/>
+                </TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Run Text="3) 객체지향형 프로그래밍 환경 : " Foreground="{StaticResource MainBlueBrush}"/>
+                    <Run Text="&#10;객체지향형 프로그래밍 환경으로 코드 재사용이 증가. &#10;이에따라 컴퓨터프로그램 저작물의 핵심은 텍스트 기반의 지시명령이 아닌 동작이며 &#10;비문언적 요소의 보호 문제 대두"/>
+                </TextBlock>
+
+
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}"
+                           Text="[복제 및 개작 등 방법으로 동일하거나 유사할 경우 저작권 침해]"/>
+
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}"
+                           Text="[저작물의 실질적 유사성을 판단하는 보편적 방법]"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="1) 추상화 과정을 통해 단계적 구성요소로 분해"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="2) 여과 과정에서 보호 대상에서 제외되는 부분(아이디어 부분, 창작성 없는 부분) 제거"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="3) 여과 과정 후 남은 부분을 보호 대상과의 비교하여 실질적 유사성을 판단"/>
+
+
+
+                <TextBlock Style="{StaticResource SubtitleBlockStyle}"
+                           Text="5. 저작권법 제한의 유형과 오픈소스 공정사용"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="- 오픈(개방)의 특성으로 공공 이익 도모 취지의 공정 사용으로 소송의 변수로 작용할 수 있음"/>
+
+
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}"
+                           Text="[프로그램 저작권 제한]"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="- 저작권법은 저작권자의 배타적 지배권과 동시에 공공 이익 도모"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="- 저작권법의 목적 : 문화 향상 발전 이바지"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="- 해당 저작권 또한 선인들의 문화유상 토대를 기반한 것으로 문화적 재산으로서 &#10;  다른 사람에게 사용의 자유를 부여하는 배려가 필요한 것이 원칙"/>
+
+
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}"
+                           Text="[프로그램저작권 제한의 유형]"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Run Text="1) 공정사용 : " Foreground="{StaticResource MainBlueBrush}"/>
+                    <Run Text="공중의 입장에서 필요 불가결한 경우, 이를 이용 가능"/>
+                </TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Run Text="2) 일반적 제한 규정 : " Foreground="{StaticResource MainBlueBrush}"/>
+                    <Run Text="수사 목적 복제, 공교육 기관에서의 교육 목적 복제 등"/>
+                </TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Run Text="3) 프로그램코드 역분석 : " Foreground="{StaticResource MainBlueBrush}"/>
+                    <Run Text="다른 프로그램과의 호환 목적의 필요한 범위에서의 역분석"/>
+                </TextBlock>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Run Text="4) 보존 목적 복제 : " Foreground="{StaticResource MainBlueBrush}"/>
+                    <Run Text="멸실-훼손 또는 변질 등에 대비하여 필요한 범위에서의 복제"/>
+                </TextBlock>
+
+
+                <TextBlock Style="{StaticResource SubtitleBlockStyle}"
+                           Text="6. 오픈소스 프로젝트의 정체성 보호를 위한 상표권"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="- 소스코드를 사용한다고 상표권까지 사용할 수 있는 것이 아니며&#10;  상표권은 오픈소스 프로젝트 커뮤니티의 브랜드를 보호"/>
+
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}"
+                           Text="[상표권]"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="상표권의 역할 : 상표권은 출처 표시 기능과 품질보증 기능을 수행"/>
+
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}"
+                           Text="[오픈소스(SW) 커뮤니티 상표권]"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="- 오픈소스 커뮤니티는 해당 오픈소스 SW 개발, 유지보수 등 업무상의 신용 보유"/>
+
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}"
+                           Text="[오픈소스 상표권을 무단 사용한다는 의미는?]"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="- 오픈소스 프로젝트 이름(상표) 그대로 사용"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="- 오픈소스 커뮤니티 이념, 가치에 반하는 개작과 사용을 하는 경우에도&#10;  상표권을 사용한다면 이해관계에 중대한 영향"/>
+
+                <TextBlock Style="{StaticResource SubtitleBlockStyle}"
+                           Text="오픈소스와 상표권 관련 Q&amp;A"/>
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}"
+                           Text="Q. 오픈소스 프로젝트 로고 등을 홍보에 활용해도 괜찮은가요?"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="A. 상표권을 통한 오픈소스 보호되어 법적 리스크 존재한다."/>
+                <TextBlock Style="{StaticResource Sub-subtitleBlockStyle}"
+                           Text="Q. 그렇다면 오픈소스 프로젝트 로고 등을 사용하려면 어떻게 해야 하나요?"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="A. 명시적 허락이 필요하다."/>
+
+
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" 
+                           Foreground="Gray" HorizontalAlignment="Center"
+                           Text="다음 버튼을 눌러 다음 차례로 이동하세요"/>
+
+            </StackPanel>
+        </ScrollViewer>
+
+
+        <!-- 이전/다음 버튼 -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                    Background="White">
+            <Button Style="{DynamicResource OTPButtonStyle}" Content="이전" Click="PreviousButton_Click"/>
+            <Button Style="{DynamicResource OTPButtonStyle}" Content="다음" Click="NextButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

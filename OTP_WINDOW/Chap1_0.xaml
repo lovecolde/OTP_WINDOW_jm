@@ -1,0 +1,134 @@
+﻿<Page x:Class="OTP_WINDOW.Chap1_0"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OTP_WINDOW"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="825"
+      Title="Chap1_0">
+
+    <Grid Background="White">
+        <!-- Grid의 행 정의 -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Margin="20">
+
+                <TextBlock Style="{StaticResource MainTitleBlockStyle}">
+                    <Hyperlink NavigateUri="https://aws.amazon.com/ko/what-is/open-source/"
+                               Foreground="{StaticResource MainBlueBrush}">
+                        <Run Text="오픈소스(Open Source)"/>
+                    </Hyperlink>
+                    <Run Text="란?"/>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                       Text="- 소프트웨어 등을 만들 때 그 소프트웨어가 어떻게 만들어졌는지 알 수 있도록 소스코드를 공개한 것"/>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                       Text="- 소스코드를 알면 그 프로그램, 소프트웨어가 어떻게 구성되어 있는지 알 수 있다,&#10;  또한 이것을 기초하여 변형, 응용이 가능하다."/>
+				
+
+                <TextBlock Style="{StaticResource MainTitleBlockStyle}">
+                    <Hyperlink NavigateUri="https://terms.naver.com/entry.naver?docId=3480349&amp;cid=58439&amp;categoryId=58439"
+                               Foreground="{StaticResource MainBlueBrush}">
+                        <Run Text="오픈소스(Open Source) SW"/>
+                    </Hyperlink>
+                    <Run Text="종류"/>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://www.linux.org/" 
+                               Foreground="Black">
+                        <Run Text="- Linux"/>
+                     </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://www.nic.funet.fi/pub/sci/bio/life/insecta/lepidoptera/ditrysia/gelechioidea/depressariidae/depressariinae/apachea/"
+                               Foreground="Black">
+                        <Run Text="- Apache"/>
+                     </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://www.mozilla.org/ko/firefox/"
+                               Foreground="Black">
+                        <Run Text="- Mozila FireFox"/>
+                     </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://www.mysql.com/"
+                               Foreground="Black">
+                        <Run Text="- MySQL"/>
+                     </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://www.postgresql.org/"
+                               Foreground="Black">
+                        <Run Text="- PostgreSQL"/>
+                     </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://www.gnu.org/gnu/thegnuproject"
+                               Foreground="Black">
+                        <Run Text="- GNU"/>
+                     </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://www.android.com/"
+                               Foreground="Black">
+                        <Run Text="- Android OS"/>
+                     </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://www.openoffice.org/"
+                               Foreground="Black">
+                        <Run Text="- OpenOffice"/>
+                     </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://ko.libreoffice.org/"
+                               Foreground="Black">
+                        <Run Text="- LibreOffice"/>
+                     </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://www.python.org/"
+                               Foreground="Black">
+                        <Run Text="- Python "/>
+                     </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                    <Hyperlink NavigateUri="https://www.java.com/ko/"
+                               Foreground="Black">
+                        <Run Text="- Java "/>
+                     </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}" 
+                           Foreground="Gray" HorizontalAlignment="Center"
+                           Text="다음 버튼을 눌러 다음 차례로 이동하세요"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- 이전/다음 버튼 -->
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                    Background="White">
+            <Button Style="{DynamicResource OTPButtonStyle}" Content="이전" Click="PreviousButton_Click"/>
+            <Button Style="{DynamicResource OTPButtonStyle}" Content="다음" Click="NextButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
