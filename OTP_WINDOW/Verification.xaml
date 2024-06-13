@@ -22,13 +22,15 @@
             <Button Name="LoadJsonButton" Content="Load JSON" Width="120" Margin="10" Click="LoadJsonButton_Click" 
                     Style="{DynamicResource OTPButton2Style}"/>
 
-            <TextBox Name="CmdPathTextBox" Text="Cmd Path" IsReadOnly="True" 
-                     HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" />
+            <TextBox Name="CmdPathTextBox" Text="Cmd Path" IsReadOnly="True" BorderBrush="Transparent"
+                     Style="{StaticResource TextBoxStyle}" />
         </StackPanel>
 
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="10">
             <TextBox Name="CppContentTextBox" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" 
-                     TextWrapping="Wrap" IsReadOnly="True" FontFamily="Consolas" FontSize="14"/>
+                     Width="700"
+                     TextWrapping="Wrap" IsReadOnly="True" FontFamily="Consolas" HorizontalAlignment="Center"
+                     Style="{StaticResource TextBoxStyle}"/>
         </ScrollViewer>
 
         <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10">

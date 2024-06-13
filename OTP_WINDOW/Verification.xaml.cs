@@ -100,7 +100,7 @@ namespace OTP_WINDOW
                 {
                     if (property.Name != "CMakeCXXCompilerId.cpp")
                     {
-                        string cppFileName = Path.GetFileNameWithoutExtension(property.Name);
+                        string cppFileName = System.IO.Path.GetFileNameWithoutExtension(property.Name);
                         JToken fileContent = property.Value["choices"][0]["message"]["content"];
                         content += $"{cppFileName} : {fileContent}\n\n";
                     }
