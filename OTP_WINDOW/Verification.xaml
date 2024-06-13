@@ -1,0 +1,36 @@
+﻿<Page x:Class="OTP_WINDOW.Verification"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OTP_WINDOW"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="825"
+      Title="Verification">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+
+            <Button Name="OpenCmdButton" Content="Open CMD" Width="100" Margin="10" Click="OpenCmdButton_Click" />
+            <Button Name="LoadJsonButton" Content="Load JSON" Width="100" Margin="10" Click="LoadJsonButton_Click" />
+
+            <TextBox Name="CmdPathTextBox" Text="Cmd Path" IsReadOnly="True" 
+                     HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" />
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="10">
+            <TextBox Name="CppContentTextBox" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" 
+                     TextWrapping="Wrap" IsReadOnly="True" FontFamily="Consolas" FontSize="14"/>
+        </ScrollViewer>
+
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="10">
+
+        </ScrollViewer>
+    </Grid>
+</Page>
